@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pad.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Pad.cs" Line="55" Column="1" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="14" Column="3" />
+      <File FileName="Assets/Scripts/GM.cs" Line="60" Column="22" />
+      <File FileName="Assets/Scripts/Bricks.cs" Line="12" Column="24" />
+      <File FileName="Assets/Scripts/DeadZone.cs" Line="8" Column="28" />
+      <File FileName="Assets/Scripts/TimeDestroy.cs" Line="7" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/simonedimarco/workspace-unity/Brick/Assets/Scripts/Pad.cs" line="55" column="1" />
+      <Breakpoint file="/Users/simonedimarco/workspace-unity/Brick/Assets/Scripts/Pad.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

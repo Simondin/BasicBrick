@@ -6,11 +6,15 @@ public class Pad : MonoBehaviour {
 
 	public float paddleSpeed = 1f;
 	public GameObject ball;
-	public float yInitPos = -9.5f;
+	public float yInitPos;
 	public static float xPos = 0f;
 
-	private Vector3 playerPos = new Vector3 (0, -9.5f, 0);
+	private Vector3 playerPos;
 
+	void Awake() {
+		playerPos = new Vector3 (0, yInitPos, 0);
+		transform.position = playerPos;
+	}
 
 	void Update () 
 	{
@@ -29,11 +33,13 @@ public class Pad : MonoBehaviour {
 
 		#elif UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
 
-		if(Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Stationary) || Input.GetTouch(0).TouchPhase == TouchPhase.Moved){
-			RaycastHit hit;
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			if (Physics.Raycast(ray, out hit)){
-				xPos = hit.point.x;
+		if(Input.touchCount > 0){
+			if(Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Moved){
+				RaycastHit hit;
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				if (Physics.Raycast(ray, out hit)){
+					xPos = hit.point.x;
+				}
 			}
 		}
 

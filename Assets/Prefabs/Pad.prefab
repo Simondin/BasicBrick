@@ -235,7 +235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSpeed: 1
-  yInitPos: -9.5
+  ball: {fileID: 1494628934191990}
+  yInitPos: -10
 --- !u!135 &135910754484280378
 SphereCollider:
   m_ObjectHideFlags: 1

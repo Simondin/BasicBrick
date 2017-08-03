@@ -6,11 +6,11 @@ PlayerSettings:
   serializedVersion: 12
   productGUID: 415f8196f078343deaa9ec8686bd63ff
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Simondin
   productName: Brick
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}

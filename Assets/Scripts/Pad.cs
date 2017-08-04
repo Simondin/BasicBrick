@@ -35,10 +35,12 @@ public class Pad : MonoBehaviour {
 
 		if(Input.touchCount > 0){
 			if(Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Moved){
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				if (Physics.Raycast(ray, out hit)){
-					xPos = hit.point.x;
+				if(SwipeManager.GetInstance.Direction != SwipeDirection.Up){
+					RaycastHit hit;
+					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+					if (Physics.Raycast(ray, out hit)){
+						xPos = hit.point.x;
+					}
 				}
 			}
 		}

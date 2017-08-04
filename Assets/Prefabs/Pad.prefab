@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23651810150563220}
   - component: {fileID: 54050265244285872}
   - component: {fileID: 114013488535901638}
+  - component: {fileID: 114897173220663568}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -237,6 +238,17 @@ MonoBehaviour:
   paddleSpeed: 1
   ball: {fileID: 1494628934191990}
   yInitPos: -10
+--- !u!114 &114897173220663568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494628934191990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c797b507963d40d39f1c6c37c03c2fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135910754484280378
 SphereCollider:
   m_ObjectHideFlags: 1
